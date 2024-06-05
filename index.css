@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/dd4dfce3-1a39-4b1a-8e19-b7242da17e68/86742114-c001-4800-a127-c9c89ca7bbe4/IN-en-20240527-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+  background-size: cover;
+}
+
+nav {
+  position: fixed;
+  padding: 25px 60px;
+}
+
+nav img {
+  width: 115px;
+}
+
+.form-wrapper {
+  position: absolute;
+  background-color: #0a0a0adc;
+  border-radius: 4px;
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  padding: 90px;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+.form-control {
+  height: 40px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.form-control input {
+  height: 100%;
+  width: 100%;
+  background: #333;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-control input:is(:focus, :valid) {
+  background: #444;
+  padding: 16px 20px 0;
+}
+
+.form-control input:is(:focus, :valid) ~ label {
+  font-size: 0.75rem;
+  transform: translateY(-130%);
+}
+
+.form-control label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  color: #8c8c8c;
+  transition: all 0.1s ease;
+}
+
+button {
+  width: 100%;
+  padding: 12px 0;
+  margin: 10px 0;
+  font-size: 16px;
+  background: #e50914;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+#code {
+  background-color: #464646;
+}
+
+label,
+p,
+small,
+a {
+  color: #737373;
+}
+
+#or {
+  text-align: center;
+}
+
+.form-wrapper p a {
+  color: #fff;
+}
+
+small {
+  display: block;
+  margin-top: 15px;
+}
+
+small a {
+  color: #0071eb;
+}
+
+.form-help {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-me {
+  display: flex;
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+.form-wrapper a:hover {
+  text-decoration: underline;
+}
+
+form .form-help :where(label, a) {
+  font-size: 14px;
+}
+
+form button:hover,
+#code:hover {
+  opacity: 0.8;
+}
